@@ -33,7 +33,7 @@ Install/upgrade the tool from PyPI using:
 
 Example:
 
-    $ gupload --parent 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file a.out ../a.out --file changelog.txt ../changelog.txt
+    $ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file a.out ../a.out --file changelog.txt ../changelog.txt
 
 Output:
 
