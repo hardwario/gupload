@@ -1,3 +1,5 @@
+'Google Drive CLI Uploader'
+
 import apiclient
 import click
 import googleapiclient.discovery
