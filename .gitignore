@@ -1,0 +1,9 @@
+.DS_Store
+.eggs/
+.vscode/
+*.egg-info/
+*.pyc
+build/
+dist/
+env/
+gupload/__pycache__/

@@ -1,0 +1,13 @@
+language: 'python'
+python:
+  - '3.6'
+script:
+  - 'true'
+deploy:
+  provider: 'pypi'
+  user: 'hardwario'
+  password:
+    secure: 'eZDlh+M9eMCwLFR5gTJHQeI0yzIUrElIyoXjQHnoIMnBJ/VgAoWpSgUgL4Sri/8n8ZsEMJ7fX1b4ZncTU1xxKpQBZ2UCamrSrwk++eVeNPJN7EuldxC1dx6XHMqSdARUmXdKOxEQAY7gT6lvTNRIsCjsWZLhSY+rJnH5xmYM0TKHb/K8yrMEEOKpx+4ILGBJhaj7XXIYgP/MUHpqSibjmlIJr5zFSpBsBRJvRi1+jpjToFHtitYKLjka5FuPWBOC4r0VNYhu+XWssIypcu/855U7pI5LUMkNFZDqZOj5VF/LU030//wKDh+85HIvx6Gr0TF6qYdVQKx30cv+YsSJRySPsiOIufcjiXFb3yr0Q3dse3MUFR+eJwPKhABafqVXHZx7rJkjsKynGXrpEOlxuRlw+pqYWejsgx1Xmc6Hix8ayejejBMEly8qzw83imDm6cDkk+VlwbBVzTqzTjzlVxebvKo/p68WsWHKF042ZdX+XOOvz9xnbCo6RY5hIHeZBd+OwwPrnsUmN0BdeyWy0+JLh5DgVuNPbB72wAK8WkIez/YBap+7GGlxPg2VSW0QRQeectbePBXNCZwlU4d94+d5qHs2qN2pBDbpOukF8Y8AUAOMW7ELdnbrFTlg/MQw2I4fMN0OboPe/kasGTDWe4hwb+umGf7QqPvChCaTcx4='
+  distributions: 'sdist bdist_wheel'
+  on:
+    tags: true
