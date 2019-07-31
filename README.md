@@ -23,15 +23,20 @@ Install/upgrade the tool from PyPI using:
 ## Usage
 
     $ gupload --help
-    Usage: gupload [OPTIONS]
+    Usage: gupload [OPTIONS] [FILES]...
 
     Options:
-    -d, --folder ID            Target folder identifier.
+    --to ID                    Target folder identifier.  [required]
     -f, --file <NAME PATH>...  Input file(s) to be uploaded.
+    -n, --nono                 No action: print names of files to be upload, but
+                                don't upload.
     --version                  Show the version and exit.
     --help                     Show this message and exit.
 
-Example:
+
+## Example:
+
+### Upload and rename
 
     $ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file a.out ../a.out --file changelog.txt ../changelog.txt
 
@@ -39,6 +44,26 @@ Output:
 
     Uploading file: a.out
     Uploading file: changelog.txt
+
+
+### Upload all zip files
+
+    $ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW *.zip
+
+Output:
+
+    Uploading file: a.zip
+    Uploading file: b.zip
+
+### Combination
+
+    $ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file changelog.txt ../changelog.txt *.zip
+
+Output:
+
+    Uploading file: changelog.txt
+    Uploading file: a.zip
+    Uploading file: b.zip
 
 ## Contributing
 
@@ -51,6 +76,7 @@ We use [**SemVer**](https://semver.org/) for versioning. For the versions availa
 ## Authors
 
 * [**Pavel Hübner**](https://github.com/hubpav) - Initial work
+* [**Karel Blavka**](https://github.com/blavka) - Extension
 
 ## License
 
