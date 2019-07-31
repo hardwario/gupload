@@ -1,5 +1,11 @@
 # gupload - Google Drive CLI Uploader
 
+[![Travis](https://img.shields.io/travis/hardwario/gupload/master.svg)](https://travis-ci.org/hardwario/gupload)
+[![Release](https://img.shields.io/github/release/hardwario/gupload.svg)](https://github.com/hardwario/gupload/releases)
+[![License](https://img.shields.io/github/license/hardwario/gupload.svg)](https://github.com/hardwario/gupload/blob/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/gupload.svg)](https://pypi.org/project/gupload/)
+
+
 Our motivation to create the **gupload** tool was the deployment of the GitLab CI artifacts to our Google Drive disk. The tool is not limited to this use-case though. It is a simple Python 3 command-line utility ingesting file names and their respective path arguments. Those are uploaded to Google Drive via Google service account (recommended approach by Google) and an optionally specified folder (through its ID).
 
 The secret file is accessed via the environmental variable `GOOGLE_APPLICATION_CREDENTIALS` and it should be set prior the program execution:
