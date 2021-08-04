@@ -44,7 +44,7 @@ Install/upgrade the tool from PyPI using:
 
 ### Upload and rename
 
-    $ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file a.out ../a.out --file changelog.txt ../changelog.txt
+    $ gupload --to 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file a.out ../a.out --file changelog.txt ../changelog.txt
 
 Output:
 
@@ -54,7 +54,7 @@ Output:
 
 ### Upload all zip files
 
-    $ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW *.zip
+    $ gupload --to 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW *.zip
 
 Output:
 
@@ -63,7 +63,7 @@ Output:
 
 ### Combination
 
-    $ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file changelog.txt ../changelog.txt *.zip
+    $ gupload --to 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file changelog.txt ../changelog.txt *.zip
 
 Output:
 
