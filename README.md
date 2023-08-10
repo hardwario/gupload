@@ -36,6 +36,8 @@ Install/upgrade the tool from PyPI using:
     -f, --file <NAME PATH>...  Input file(s) to be uploaded.
     -n, --nono                 No action: print names of files to be upload, but
                                 don't upload.
+    --no-duplicates            If the target folder contains a folder with the
+                               same name, update instead of creating a new file.
     --version                  Show the version and exit.
     --help                     Show this message and exit.
 
